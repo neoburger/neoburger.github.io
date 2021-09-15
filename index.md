@@ -1,14 +1,16 @@
-# BurgerNEO
+# Home
 
 *bNEO* is a standard [NEP-17](https://docs.neo.org/docs/en-us/develop/write/nep17.html) token with decimals `8` and it can be minted from *NEO* and redeemed to *NEO* 1:1.
 
 *bNEO* holders enjoy optimized *GAS* reward in Neo governance and it's easy and free to transfer *bNEO* to anyone else. Once *bNEO* is transfered, *GAS* reward after the transaction will be distributed to the receiver.
 
+## Use *bNEO*
+
 The smart contract of NeoBurger is well designed to make it easy to use on all kinds of wallets.
 
 - **mint** *bNEO*: send *NEO* to `[TODO]: bNEO address` and you will receive the same amount of *bNEO* instantly in the same transaction
 - **redeem** *bNEO*: send withdraw fee (*GAS*) to `[TODO]: bNEO address` and you will redeem *bNEO* to *NEO* instantly in the same transaction (the withdraw fee is `0.01` *GAS* per *NEO*) (it is better to send integer multiples of `0.01` *GAS* because *NEO* is indivisible)
-- **claim** *GAS*: send *bNEO* to `[TODO]: bNEO address` and you will claim your *GAS* reward
+- **claim** *GAS*: send *bNEO* to `[TODO]: bNEO address` and you will claim your *GAS* reward (it's better to send `0` *bNEO* if your wallet supports sending `0` amount)
 
 ## Applications
 
