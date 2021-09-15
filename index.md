@@ -6,11 +6,18 @@
 
 ## Use *bNEO*
 
+**TESTNET ONLY NOW; MAINNET SOON;**
+
 The smart contract of NeoBurger is well designed to make it easy to use on all kinds of wallets.
 
-- **mint** *bNEO*: send *NEO* to `[TODO]: bNEO address` and you will receive the same amount of *bNEO* instantly in the same transaction
-- **redeem** *bNEO*: send withdraw fee (*GAS*) to `[TODO]: bNEO address` and you will redeem *bNEO* to *NEO* instantly in the same transaction (the withdraw fee is `0.01` *GAS* per *NEO*) (it is better to send integer multiples of `0.01` *GAS* because *NEO* is indivisible)
-- **claim** *GAS*: send *bNEO* to `[TODO]: bNEO address` and you will claim your *GAS* reward (it's better to send `0` *bNEO* if your wallet supports sending `0` amount)
+- *bNEO* script hash: `0x48c40d4666f93408be1bef038b6722404d9a4c2a`
+- *bNEO* contract address: `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos`
+
+| operation | description |
+| --- | --- |
+| **mint** *bNEO* | send *NEO* to `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos` and you will receive the same amount of *bNEO* instantly in the same transaction |
+| **redeem** *bNEO* | send withdraw fee (*GAS*) to `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos` and you will redeem *bNEO* to *NEO* instantly in the same transaction (the withdraw fee is `0.01` *GAS* per *NEO*) (it is better to send integer multiples of `0.01` *GAS* because *NEO* is indivisible) |
+| **claim** *GAS* | send *bNEO* to `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos` and you will claim your *GAS* reward (it's better to send `0` *bNEO* if your wallet supports sending `0` amount) |
 
 ## Applications
 
