@@ -16,7 +16,7 @@ The smart contract of NeoBurger is well designed to make it easy to use on all k
 | operation | description |
 | --- | --- |
 | **mint** *bNEO* | send *NEO* to `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos` and you will receive the same amount of *bNEO* instantly in the same transaction |
-| **redeem** *bNEO* | send withdraw fee (*GAS*) to `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos` and you will redeem *bNEO* to *NEO* instantly in the same transaction (the withdraw fee is `0.01` *GAS* per *NEO*) (it is better to send integer multiples of `0.01` *GAS* because *NEO* is indivisible) |
+| **redeem** *bNEO* | send withdraw fee (*GAS*) to `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos` and you will redeem *bNEO* to *NEO* instantly in the same transaction (the withdraw fee is `0.01` *GAS* per *NEO*) (it is better to send integer multiples of `0.01` *GAS* because *NEO* is indivisible) (note that the argument `data` must be `null` which is default for most wallets) |
 | **claim** *GAS* | send any amount of *bNEO* to `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos` and you will claim your *GAS* reward (it's better to send `0` *bNEO* if your wallet supports sending `0` amount) |
 
 ## Applications
