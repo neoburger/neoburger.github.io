@@ -6,9 +6,9 @@
 
 ## Use *bNEO*
 
-**TESTNET ONLY NOW; MAINNET SOON;**
-
 The smart contract of NeoBurger is well designed to make it easy to use on all kinds of wallets.
+
+> *bNEO* is awailable on mainnnet and testnet with same script hash and contract address
 
 - *bNEO* script hash: `0x48c40d4666f93408be1bef038b6722404d9a4c2a`
 - *bNEO* contract address: `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos`
@@ -30,17 +30,15 @@ The following tools are supportted for better usage.
 ## How it works
 
 ```
-
-┌──────────────┐    NEO         ┌──────────────┐    NEO         ┌──────────────┐
-│              ├───────────────►│              │................│              │
-│              │                │              │                │              │
-│              │    bNEO        │              │                │              │
-│     USER     │◄───────────────┤  NEO BURGER  │                │NEO GOVERNANCE│
-│              │                │              │                │              │
-│              │    GAS         │              │    GAS         │              │
-│              │◄───────────────┤              │◄───────────────┤              │
-└──────────────┘                └──────────────┘                └──────────────┘
-
++--------------+      NEO       +--------------+      NEO       +--------------+
+|              ├--------------->|              |................|              |
+|              |                |              |                |              |
+|              |      bNEO      |              |                |              |
+|     USER     |<---------------┤  NEO BURGER  |                |NEO GOVERNANCE|
+|              |                |              |                |              |
+|              |      GAS       |              |      GAS       |              |
+|              |<---------------┤              |<---------------┤              |
++--------------+                +--------------+                +--------------+
 ```
 
 > NEO token holders decide who is in charge of maintaining the Neo network through the election of a Neo Council. GAS token rewards are distributed to voters and council members alike.
