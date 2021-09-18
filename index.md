@@ -4,6 +4,13 @@
 
 *bNEO* holders enjoy optimized *GAS* reward in Neo governance and it's easy and free to transfer *bNEO* to anyone else. Once *bNEO* is transfered, *GAS* reward after the transaction will be distributed to the receiver.
 
+## Applications
+
+The following tools are supportted for better usage.
+
+- [dashboard](/dashboard/)
+- web gui (comming soon)
+
 ## Use *bNEO*
 
 The smart contract of NeoBurger is well designed to make it easy to use on all kinds of wallets.
@@ -20,14 +27,6 @@ The smart contract of NeoBurger is well designed to make it easy to use on all k
 | **claim** *GAS* | send any amount of *bNEO* to `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos` and you will claim your *GAS* reward (it's better to send `0` *bNEO* if your wallet supports sending `0` amount) |
 
 > Holding *bNEO* implies vote delegation in Neo governance. The governance modulo of Neoburger provides a DAO to to enhance the Neo governance in a decentrilized way.
-
-## Applications
-
-The following tools are supportted for better usage.
-
-- dashboard (comming soon)
-- web gui (comming soon)
-- ...
 
 ## How it works
 
