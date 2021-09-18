@@ -19,6 +19,8 @@ The smart contract of NeoBurger is well designed to make it easy to use on all k
 | **redeem** *bNEO* | send withdraw fee (*GAS*) to `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos` and you will redeem *bNEO* to *NEO* instantly in the same transaction (the withdraw fee is `0.01` *GAS* per *NEO*) (it is better to send integer multiples of `0.01` *GAS* because *NEO* is indivisible) (note that the argument `data` in *GAS* transfer must be `null` which is default for most wallets) |
 | **claim** *GAS* | send any amount of *bNEO* to `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos` and you will claim your *GAS* reward (it's better to send `0` *bNEO* if your wallet supports sending `0` amount) |
 
+> Holding *bNEO* implies vote delegation in Neo governance. The governance modulo of Neoburger provides a DAO to to enhance the Neo governance in a decentrilized way.
+
 ## Applications
 
 The following tools are supportted for better usage.
@@ -31,13 +33,13 @@ The following tools are supportted for better usage.
 
 ```
 +--------------+      NEO       +--------------+      NEO       +--------------+
-|              ├--------------->|              |................|              |
+|              |--------------->|              |................|              |
 |              |                |              |                |              |
 |              |      bNEO      |              |                |              |
-|     USER     |<---------------┤  NEO BURGER  |                |NEO GOVERNANCE|
+|     USER     |<---------------|  NEO BURGER  |                |NEO GOVERNANCE|
 |              |                |              |                |              |
 |              |      GAS       |              |      GAS       |              |
-|              |<---------------┤              |<---------------┤              |
+|              |<---------------|              |<---------------|              |
 +--------------+                +--------------+                +--------------+
 ```
 
