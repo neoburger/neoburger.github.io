@@ -1,3 +1,5 @@
+> I want to vote for a candidate but I only want to vote for it if it is going to win. Otherwise, I'll vote in another candidate that will give me some *GAS*.
+
 # Home
 
 *bNEO* is a standard [NEP-17](https://docs.neo.org/docs/en-us/develop/write/nep17.html) token with decimals `8` and it can be minted from *NEO* and redeemed to *NEO* 1:1.
@@ -64,6 +66,8 @@ The permission of strategist is restricted by the candidate whitelist in order t
 The governance modulo is under developing and it is expected to have a good DAO application on Neo.
 
 Eventually NeoBurger is a DAO based project and the DAO will be the owner of entire project.
+
+> I want to vote for a candidate but I only want to vote for it if it is going to win. Otherwise, I'll vote in another candidate that will give me some GAS.
 
 ```
         OOOOOOOOOOOOOOOOOOOO        
