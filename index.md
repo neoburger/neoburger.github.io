@@ -5,7 +5,7 @@
 ## Applications
 
 - [dashboard](/dashboard/)
-- web gui (comming soon)
+- [web gui](https://neoburger.io)
 
 ## Use *bNEO*
 
