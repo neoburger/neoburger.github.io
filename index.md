@@ -1,3 +1,5 @@
+**WITHDRAW FEE WILL BE CHANGED TO `0.001` *GAS* PER *NEO* AT 2021-12-13 09:00:00 UTC+0**
+
 # Home
 
 *bNEO* is a standard [NEP-17](https://docs.neo.org/docs/en-us/develop/write/nep17.html) token with decimals `8` and it can be minted from *NEO* and redeemed to *NEO* 1:1. *bNEO* holders receive optimized *GAS* reward in [NEO GOVERNANCE](https://neo.org/gov).
@@ -48,8 +50,45 @@ The permission of strategist is restricted by the candidate whitelist in order t
 
 ## Fee
 
-- performance fee: `1%` (will be sent to the treasury)
-- withdraw fee: `0.01` *GAS* per *NEO* (`99%` will be distributed to *bNEO* holders and `1%` to the treasury)
+### Performance Fee
+
+`1%` (will be sent to the treasury)
+
+> Performance fee is necessary for this project to survive and it is just `1%` of the *GAS* profit.
+
+### Withdraw Fee
+
+`0.01` *GAS* per *NEO* (`99%` will be distributed to *bNEO* holders and `1%` to the treasury)
+
+**WITHDRAW FEE WILL BE CHANGED TO `0.001` *GAS* PER *NEO* AT 2021-12-13 09:00:00 UTC+0**
+
+> Withdraw fee is necessary to ensure the profit safety of exsiting *bNEO* holders.
+>
+> - Every withdraw will affect other bNEO holders' profit because it breaks the current *NEO* distribution on each agent contract and *GAS* reward is not optimal until the strategist re-adjust the *NEO* distribution again.
+> 
+> - the *GAS* reward will be distributed to all *bNEO* holders when the harvest operation is called and the harvest operaiton is triggered every serval hours. Imaging a hacker deposits a huge amount of *NEO* 1 second before the harvest operation and then withdraw its *NEO* 1 second after the harvest, then the hacker will get most of the *GAS* reward of this harvest (because *GAS* is distributed based on the *bNEO* balance and the hacker has a huge amount of *bNEO* at that time). Actually the hacker contributes almost nothing but steals *GAS* reward from existing *bNEO* holders. To avoid this kind of risks, withdraw fee is used.
+>
+>     The profit of the hacker can be calculated by the following expression
+>     
+>     ```
+>     P = G * X / (X + T) - X * F * T / (X + T)
+>     ```
+>     
+>     where
+>     
+>     - `P`: profit of the hacker
+>     - `G`: *GAS* reward to be harvested
+>     - `F`: withdraw fee factor
+>     - `T`: *NEO* deposited by other users
+>     - `X`: *NEO* deposited by the hacker
+>     
+>     thus
+>     
+>     ```
+>     P < 0 -> G < F * T
+>     ```
+>     
+>     That's how the withdraw fee it decided.
 
 ## Governance
 
@@ -60,21 +99,3 @@ The governance modulo is under developing and it is expected to have a good DAO 
 BurgerDAO is also a n enhancement for [NEO GOVERNANCE](https://neo.org/gov) and it solves the following dilemma:
 
 > I want to vote for a candidate but I only want to vote for it if it is going to win. Otherwise, I'll vote in another candidate that will give me some GAS.
-
-```
-        OOOOOOOOOOOOOOOOOOOO        
-      OO                    OO      
-    OO                        OO    
-  OO                            OO  
-  OO         NEO BURGER         OO  
-  OO                            OO  
-OO                                OO
-OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-OONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNOO
-  OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO  
-OO                                OO
-  OO    OO    OOOOOO    OO    OOOO  
-  OOOOOO  OOOO      OOOO  OOOO  OO  
-  OO                            OO  
-    OOOOOOOOOOOOOOOOOOOOOOOOOOOO    
-```
