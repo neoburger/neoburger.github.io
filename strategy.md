@@ -132,6 +132,10 @@ $$
 \begin{bmatrix}
     \frac{\partial^2{\Lambda}}{\partial{\lambda}^2} & \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_1}}} & \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_2}}} & \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_3}}} & \dots & \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_{\lVert \mathcal{C} \rVert}}}} \\
     {(\frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_1}}})}^\intercal & \frac{\partial^2{\Lambda}}{\partial{n_{c_1}}^2} & & & & \\
+    {(\frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_2}}})}^\intercal & & \frac{\partial^2{\Lambda}}{\partial{n_{c_2}}^2} & & & \\
+    {(\frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_3}}})}^\intercal & & & \frac{\partial^2{\Lambda}}{\partial{n_{c_3}}^2} & & \\
+    \vdots & & & & \ddots & \\
+    {(\frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_{\lVert \mathcal{C} \rVert}}}})}^\intercal & & & & & \frac{\partial^2{\Lambda}}{\partial{n_{c_{\lVert \mathcal{C} \rVert}}}^2} \\
 \end{bmatrix}
 $$
 
