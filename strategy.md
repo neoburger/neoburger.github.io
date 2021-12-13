@@ -53,19 +53,19 @@ Follow the [method of Lagrange multipliers](#https://en.wikipedia.org/wiki/Lagra
 In order to find the maximum of function $f$ subjected to the equality constraint $g = \sum_{c \in \mathcal{C}}{n_c} - n = 0$, form the Lagrangian function:
 
 $$
-\Alpha = f - \lambda g
+\Lambda = f - \lambda g
 $$
 
 The necessary condition for the optimality can be inferred by solving the following equation
 
 $$
-\nabla{\Alpha} = 0
+\nabla{\Lambda} = 0
 $$
 
 Thus for $\forall c \in \mathcal{C}$:
 
 $$
-\frac{\partial{\Alpha}}{\partial{n_c}} = - \frac{k_c v_c}{ {(v_c + n_c)}^2 } - \lambda = 0
+\frac{\partial{\Lambda}}{\partial{n_c}} = - \frac{k_c v_c}{ {(v_c + n_c)}^2 } - \lambda = 0
 $$
 
 TODO
