@@ -8,21 +8,15 @@ TODO
 
 Given:
 
-- $\mathcal{P}$: a set of candidates
-- $\mathcal{Q}$: a set of agents
-- $v_p \in \mathbb{R_{\ge 0}}$: the votes of each candidate $p \in \mathcal{P}$
-- $k_p \in \mathbb{R_{\ge 0}}$: the reward coefficient of each candidate $p \in \mathcal{P}$
+- $\mathcal{C}$: a set of candidates
+- $v_c \in \mathbb{R_{\ge 0}}$: the votes of each candidate $c \in \mathcal{C}$
+- $k_c \in \mathbb{R_{\ge 0}}$: the reward coefficient of each candidate $c \in \mathcal{C}$
 - $n \in \mathbb{R_{\ge 0}}$: the total amount of *NEO* we hold
 
-Solve:
-
-- $n_q \in \mathbb{R_{\ge 0}}$: the amount of *NEO* distributed to each agent $q \in \mathcal{Q}$
-- $p_q \in \mathcal{P}$: the voting target of each agent $q \in \mathcal{Q}$
-
-which maximize the following *GAS* reward expression:
+Solve the amount of *NEO* $n_c \in \mathbb{R_{\ge 0}}$ we vote to each candidate $c \in \mathcal{C}$ satisfing $\sum_{c \in \mathcal{C}}{n_c} = n$ and maximizing the following *GAS* reward expression:
 
 $$
-g = \sum_{q \in Q}{\frac{n_q k_{p_q}}{v_{p_q} + n_q}} \in \mathbb{R_{\ge 0}}
+g = \sum_{c \in \mathcal{C}}{\frac{n_c k_c}{v_c + n_c}} \in \mathbb{R_{\ge 0}}
 $$
 
 ## The Metric
@@ -32,30 +26,22 @@ $$
 
 ## The Solution
 
-### Solution for $p_q$
-
-1. find the $\lVert \mathcal{Q} \rVert$ candidates as $\mathcal{P}_*$ whose $\frac{v_p}{k_p}$ are the lowest where $p \in \mathcal{P}$
-2. pick any bijection $f$ of $\mathcal{Q}$ to $\mathcal{P}_*$
-3. for $\forall q \in \mathcal{Q}$: $p_q = f(q)$
-
-### Solution for $n_q$
-
 1. calculate $n_*$:
  
     $$
-    n_* = \sum_{p \in \mathcal{P}_*}{v_p}
+    n_* = \sum_{c \in \mathcal{C}}{v_c}
     $$
 
 2. calculate $u$:
  
     $$
-    u = \frac{n + n_*}{\sum_{p \in \mathcal{P}_*}{\sqrt{k_p v_p}}}
+    u = \frac{n + n_*}{\sum_{c \in \mathcal{C}}{\sqrt{k_c v_c}}}
     $$
 
-3. for $\forall q \in \mathcal{Q}$:
+3. for $\forall c \in \mathcal{C}$:
  
     $$
-    n_q = u \sqrt{k_{p_q} v_{p_q}} - v_{p_q}
+    n_c = u \sqrt{k_c v_c} - v_c
     $$
 
 ## The Analysis
