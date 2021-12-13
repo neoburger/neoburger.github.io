@@ -131,11 +131,25 @@ $$
 \mathbf{H}(\Lambda) = 
 \begin{bmatrix}
     \frac{\partial^2{\Lambda}}{\partial{\lambda}^2} & \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_1}}} & \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_2}}} & \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_3}}} & \dots & \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_{\lVert \mathcal{C} \rVert}}}} \\
-    {(\frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_1}}})}^\intercal & \frac{\partial^2{\Lambda}}{\partial{n_{c_1}}^2} & & & & \\
-    {(\frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_2}}})}^\intercal & & \frac{\partial^2{\Lambda}}{\partial{n_{c_2}}^2} & & & \\
-    {(\frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_3}}})}^\intercal & & & \frac{\partial^2{\Lambda}}{\partial{n_{c_3}}^2} & & \\
+    \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_1}}} & \frac{\partial^2{\Lambda}}{\partial{n_{c_1}}^2} & & & & \\
+    \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_2}}} & & \frac{\partial^2{\Lambda}}{\partial{n_{c_2}}^2} & & & \\
+    \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_3}}} & & & \frac{\partial^2{\Lambda}}{\partial{n_{c_3}}^2} & & \\
     \vdots & & & & \ddots & \\
-    {(\frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_{\lVert \mathcal{C} \rVert}}}})}^\intercal & & & & & \frac{\partial^2{\Lambda}}{\partial{n_{c_{\lVert \mathcal{C} \rVert}}}^2} \\
+    \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_{\lVert \mathcal{C} \rVert}}}} & & & & & \frac{\partial^2{\Lambda}}{\partial{n_{c_{\lVert \mathcal{C} \rVert}}}^2} \\
+\end{bmatrix}
+$$
+
+Then:
+
+$$
+\mathbf{H}(\Lambda) = 
+\begin{bmatrix}
+    0 & -1 & -1 & -1 & \dots & -1 \\
+    -1 & -\frac{2 k_{c_1} v_{c_1}}{ {v_{c_1} + n_{c_1}}^3 } & & & & \\
+    -1 & & -\frac{2 k_{c_2} v_{c_2}}{ {v_{c_2} + n_{c_2}}^3 } & & & \\
+    -1 & & & -\frac{2 k_{c_3} v_{c_3}}{ {v_{c_3} + n_{c_3}}^3 } & & \\
+    \vdots & & & & \ddots & \\
+    -1 & & & & & -\frac{2 k_{c_{\lVert \mathcal{C} \rVert}} v_{c_{\lVert \mathcal{C} \rVert}}}{ {v_{c_{\lVert \mathcal{C} \rVert}} + n_{c_{\lVert \mathcal{C} \rVert}}}^3 } \\
 \end{bmatrix}
 $$
 
