@@ -9,14 +9,14 @@ TODO
 Given:
 
 - $\mathcal{C}$: a set of candidates
-- $v_c \in \mathbb{R}_{\ge 0}$: the votes of each candidate $c \in \mathcal{C}$
-- $k_c \in \mathbb{R}_{\ge 0}$: the reward coefficient of each candidate $c \in \mathcal{C}$
-- $n \in \mathbb{R}_{\ge 0}$: the total amount of *NEO* we hold
+- $v_c \in \mathbb{R}_{\gt 0}$: the votes of each candidate $c \in \mathcal{C}$
+- $k_c \in \mathbb{R}_{\gt 0}$: the reward coefficient of each candidate $c \in \mathcal{C}$
+- $n \in \mathbb{R}_{\gt 0}$: the total amount of *NEO* we hold
 
-Solve the amount of *NEO* $n_c \in \mathbb{R}_{\ge 0}$ we vote to each candidate $c \in \mathcal{C}$ satisfing $\sum_{c \in \mathcal{C}}{n_c} = n$ and maximizing the following *GAS* reward expression:
+Solve the amount of *NEO* $n_c \in \mathbb{R}_{\gt 0}$ we vote to each candidate $c \in \mathcal{C}$ satisfing $\sum_{c \in \mathcal{C}}{n_c} = n$ and maximizing the following *GAS* reward expression:
 
 $$
-f = \sum_{c \in \mathcal{C}}{\frac{n_c k_c}{v_c + n_c}} \in \mathbb{R}_{\ge 0}
+f = \sum_{c \in \mathcal{C}}{\frac{n_c k_c}{v_c + n_c}} \in \mathbb{R}_{\gt 0}
 $$
 
 ## The Metric
@@ -84,6 +84,18 @@ For $\forall c \in \mathcal{C}$: let $u = \frac{n_c + v_c}{\sqrt{k_c v_c}}$, the
 
 $$
 \sum_{c \in \mathcal{C}}{u \sqrt{k_c v_c}} = \sum_{c \in \mathcal{C}}{n_c + v_c} = n + n_*
+$$
+
+Thus:
+
+$$
+u = \frac{n + n_*}{\sum_{c \in \mathcal{C}}{\sqrt{k_c v_c}}}
+$$
+
+Thus:
+
+$$
+n_c = u \sqrt{k_c v_c} - v_c
 $$
 
 ## The Experiment
