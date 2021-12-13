@@ -26,7 +26,7 @@ $$
 
 ## The Solution
 
-Define the solution as a function $\Psi$:$ $\mathcal{C} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}_{\gt 0} \rightarrow \mathcal{C} \rightarrow \mathbb{R}_{\ge 0}$
+Define the solution as a function $\Psi$: $\mathcal{C} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}_{\gt 0} \rightarrow \mathcal{C} \rightarrow \mathbb{R}_{\ge 0}$
 
 1. calculate $n_*$:
  
@@ -46,16 +46,16 @@ Define the solution as a function $\Psi$:$ $\mathcal{C} \times \mathbb{R}^{\lVer
     n_c = u \sqrt{k_c v_c} - v_c
     $$
 
-4. define $\mathcal{C}_-$:
+4. define $\mathcal{C}_+$:
  
     $$
-    \mathcal{C}_- = \{ c \vert c \in \mathcal{C}, n_c \lt 0 \}
+    \mathcal{C}_+ = \{ c \vert c \in \mathcal{C}, n_c \ge 0 \}
     $$
 
-5. return a mapping $\psi$ where $V$ is $v_c$ for $\forall c \in \mathcal{C}$ and $K$ is $k_c$ for $\forall c \in \mathcal{C}$ :
+5. return a mapping $\psi$ where $V_+$ is $v_c$ for $\forall c \in \mathcal{C}_+$ and $K_+$ is $k_c$ for $\forall c \in \mathcal{C}_+$ :
 
    $$
-   \psi(c) = \begin{cases} 0 & c \in \mathcal{C}_- \\ n_c & \lVert \mathcal{C}_0 \rVert = 0 \\ \Psi_{\mathcal{C} \setminus \mathcal{C}_-, V, K, n } & \text{else} \end{cases}
+   \psi(c) = \begin{cases} 0 & c \notin \mathcal{C}_+ \\ n_c & \mathcal{C}_+ = \mathcal{C} \\ \Psi(\mathcal{C}_+, V_+, K_+, n) & \text{else} \end{cases}
    $$
 
 ## The Analysis
