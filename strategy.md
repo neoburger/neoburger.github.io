@@ -34,8 +34,8 @@ $$
 
 ### Solution for $p_q$
 
-1. find the $\lVert \mathcal{Q} \rVert$ candidates as $\mathcal{P}_*$ whose $\frac{v_p * k_p}$ are the lowest where $p \in \mathcal{P}$
-2. pick any bijection $f$ of $\mathcal{Q}$ to $\mathcal{P}$
+1. find the $\lVert \mathcal{Q} \rVert$ candidates as $\mathcal{P}_*$ whose $\frac{v_p}{k_p}$ are the lowest where $p \in \mathcal{P}$
+2. pick any bijection $f$ of $\mathcal{Q}$ to $\mathcal{P}_*$
 3. $p_q = f(q)$ for $\forall q \in \mathcal{Q}$
 
 ## The Analysis
