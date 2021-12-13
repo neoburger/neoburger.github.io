@@ -29,7 +29,7 @@ $$
 Define the solution as a function $\Psi$:
 
 $$
-\mathcal{C} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}_{\gt 0} \rightarrow \mathcal{C} \rightarrow \mathbb{R}_{\ge 0}
+\{ \mathcal{C}_0 \vert \mathcal{C}_0 \subseteq \mathcal{C} \} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}_{\gt 0} \rightarrow \mathcal{C} \rightarrow \mathbb{R}_{\ge 0}
 $$
 
 1. calculate $n_*$:
