@@ -36,7 +36,27 @@ $$
 
 1. find the $\lVert \mathcal{Q} \rVert$ candidates as $\mathcal{P}_*$ whose $\frac{v_p}{k_p}$ are the lowest where $p \in \mathcal{P}$
 2. pick any bijection $f$ of $\mathcal{Q}$ to $\mathcal{P}_*$
-3. $p_q = f(q)$ for $\forall q \in \mathcal{Q}$
+3. for $\forall q \in \mathcal{Q}$: $p_q = f(q)$
+
+### Solution for $n_q$
+
+1. calculate $n_*$:
+ 
+    $$
+    n_* = \sum_{p \in \mathcal{P}_*}{v_p}
+    $$
+
+2. calculate $u$:
+ 
+    $$
+    u = \frac{n + n_*}{\sum_{p \in \mathcal{P}_*}{\sqrt{k_p v_p}}}
+    $$
+
+3. for $\forall q \in \mathcal{Q}$:
+ 
+    $$
+    n_q = u \sqrt{k_{p_q} v_{p_q}} - v_{p_q}
+    $$
 
 ## The Analysis
 
