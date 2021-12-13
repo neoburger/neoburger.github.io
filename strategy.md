@@ -59,7 +59,7 @@ Define the solution as a mapping $\Psi_{\mathcal{C}}$: $\mathcal{C} \rightarrow 
 5. return a mapping $\Psi_{\mathcal{C}}$:
 
    $$
-   \Psi_{\mathcal{C}}(c) = \begin{cases} 0 & c \notin \mathcal{C}_+ \\ n_c & \mathcal{C}_+ = \mathcal{C} \\ \Psi_{\mathcal{C}}(c) & \text{else} \end{cases}
+   \Psi_{\mathcal{C}}(c) = \begin{cases} 0 & c \notin \mathcal{C}_+ \\ n_c & \mathcal{C}_+ = \mathcal{C} \\ \Psi_{\mathcal{C}_+}(c) & \text{else} \end{cases}
    $$
 
 ## The Analysis
