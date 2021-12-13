@@ -130,8 +130,8 @@ Sufficient conditions for a constrained local maximum can be stated in terms of 
 $$
 \mathbf{H}(\Lambda) = 
 \begin{bmatrix}
-    \frac{\partial^2{\Lambda}}{\partial{\lambda}^2} & \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_1}}} \\
-    {(\frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_1}}})}^\intercal & \frac{\partial^2{\Lambda}}{\partial{\lambda}^2} \\
+    \frac{\partial^2{\Lambda}}{\partial{\lambda}^2} & \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_1}}} & \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_2}}} & \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_3}}} & \dots & \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_{\lVert \mathcal{C} \rVert}}}} \\
+    {(\frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_1}}})}^\intercal & \frac{\partial^2{\Lambda}}{\partial{n_{c_1}}^2} & & & & \\
 \end{bmatrix}
 $$
 
