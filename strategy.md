@@ -183,7 +183,35 @@ Thus it is a local maximum of function $f$.
 
 Since the Hessian matrix shows $f$ is an [upper convex function](https://en.wikipedia.org/wiki/Concave_function) whose local maximum is also a global maximum, our solution is the global maximum.
 
-The only issue left is that sometimes $\exist c \in \mathcal{C}$, $n_c \lt 0$.
+The only issue left is that sometimes $\exists c \in \mathcal{C}$, $n_c \lt 0$.
+
+define $\mathcal{C}_-$:
+ 
+$$
+\mathcal{C}_- = \{ c \vert c \in \mathcal{C}, n_c \lt 0 \}
+$$
+
+to satisfy $\forall c \in \mathcal{C}$: $n_c \ge 0$, we let:
+
+$$
+\forall c \in \mathcal{C}_- : n_c = 0
+$$
+
+Otherwise $f$ is never maximum because:
+
+$$
+f \vert_{\exists c \in \mathcal{C}_- : n_c \gt 0} \lt f \vert_{\forall c \in \mathcal{C}_- : n_c = 0}
+$$
+
+Then re-calculate the rest.
+
+### Time Complexity
+
+TODO
+
+### Space Complexity
+
+TODO
 
 ## The Experiment
 
