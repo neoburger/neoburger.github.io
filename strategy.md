@@ -179,6 +179,12 @@ $$
 \operatorname{sign}(\det \mathbf{h}_i) = \operatorname{sign}(\sum_{1 \le t \le i}{ {(-1)}^i }) = {(-1)}^i
 $$
 
+Thus it is a local maximum of function $f$.
+
+Since the Hessian matrix shows $f$ is an [upper convex function](https://en.wikipedia.org/wiki/Concave_function) whose local maximum is also a global maximum, our solution is the global maximum.
+
+The only issue left is that sometimes $\exist c \in \mathcal{C}$, $n_c \lt 0$.
+
 ## The Experiment
 
 TODO
