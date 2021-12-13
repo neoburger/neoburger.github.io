@@ -50,7 +50,7 @@ $$
 
 Follow the [method of Lagrange multipliers](#https://en.wikipedia.org/wiki/Lagrange_multiplier):
 
-In order to find the maximum of function $f$ subjected to the equality constraint $g = \sum_{c \in \mathcal{C}}{n_c} - n = 0$, form the Lagrangian function:
+In order to find the maximum of function $f$ subjected to the equality constraint $g = n - \sum_{c \in \mathcal{C}}{n_c} = 0$, form the Lagrangian function:
 
 $$
 \Lambda = f - \lambda g
@@ -68,7 +68,23 @@ $$
 \frac{\partial{\Lambda}}{\partial{n_c}} = - \frac{k_c v_c}{ {(v_c + n_c)}^2 } - \lambda = 0
 $$
 
-TODO
+Thus for $\forall c_i, c_j \in \mathcal{C}$:
+
+$$
+\frac{k_{c_i} v_{c_i}}{ {(v_{c_i} + n_{c_i})}^2 } = \frac{k_{c_j} v_{c_j}}{ {(v_{c_j} + n_{c_j})}^2 }
+$$
+
+Thus for $\forall c_i, c_j \in \mathcal{C}$:
+
+$$
+\frac{n_{c_i} + v_{c_i}}{\sqrt{k_{c_i} v_{c_i}}} = \frac{n_{c_j} + v_{c_j}}{\sqrt{k_{c_j} v_{c_j}}} 
+$$
+
+For $\forall c \in \mathcal{C}$: let $u = \frac{n_c + v_c}{\sqrt{k_c v_c}}$, then:
+
+$$
+\sum_{c \in \mathcal{C}}{u \sqrt{k_c v_c}} = \sum_{c \in \mathcal{C}}{n_c + v_c} = n + n_*
+$$
 
 ## The Experiment
 
