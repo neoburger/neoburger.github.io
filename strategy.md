@@ -26,7 +26,7 @@ $$
 
 ## The Solution
 
-Define the solution as a function $\Psi$: $\mathcal{C} \times \mathbb{R}_{\gt 0} \rightarrow \mathcal{C} \rightarrow \mathbb{R}_{\ge 0}$
+Define the solution as a function $\Psi$: $1$
 
 1. calculate $n_*$:
  
