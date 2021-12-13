@@ -125,6 +125,16 @@ $$
 n_c = u \sqrt{k_c v_c} - v_c
 $$
 
+Sufficient conditions for a constrained local maximum can be stated in terms of a sequence of principal minors (determinants of upper-left-justified sub-matrices) of the [bordered Hessian matrix](https://en.wikipedia.org/wiki/Hessian_matrix#Bordered_Hessian) of second derivatives of the Lagrangian expression.
+
+$$
+\mathbf{H}(\Lambda) = 
+\begin{bmatrix}
+    \frac{\partial^2{\Lambda}}{\partial{\lambda}^2} & \frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_1}}} \\
+    {(\frac{\partial^2{\Lambda}}{\partial{\lambda} \partial{n_{c_1}}})}^\intercal & \frac{\partial^2{\Lambda}}{\partial{\lambda}^2} \\
+\end{bmatrix}
+$$
+
 ## The Experiment
 
 TODO
