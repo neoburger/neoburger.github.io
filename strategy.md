@@ -56,11 +56,16 @@ $$
     \mathcal{C}_+ = \{ c \vert c \in \mathcal{C}, n_c \ge 0 \}
     $$
 
-5. return a mapping $\psi$ where $V_+$ is $v_c$ for $\forall c \in \mathcal{C}_+$:
+5. return a mapping $\psi$:
 
    $$
    \psi(c) = \begin{cases} 0 & c \notin \mathcal{C}_+ \\ n_c & \mathcal{C}_+ = \mathcal{C} \\ \Psi(\mathcal{C}_+, V_+, K_+, n) & \text{else} \end{cases}
    $$
+   
+   where
+   
+   - $V_+$ is $v_c$ for $\forall c \in \mathcal{C}_+$
+   - $K_+$ is $k_c$ for $\forall c \in \mathcal{C}_+$
 
 ## The Analysis
 
