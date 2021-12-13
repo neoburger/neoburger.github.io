@@ -65,7 +65,7 @@ $$
 Thus for $\forall c \in \mathcal{C}$:
 
 $$
-\frac{\partial{\Alpha}}{\partial{n_c}} = \frac{v_c}{{(v_c + n_c)}^2} - \lambda = 0
+\frac{\partial{\Alpha}}{\partial{n_c}} = - \frac{k_c v_c}{{(v_c + n_c)}^2} - \lambda = 0
 $$
 
 TODO
