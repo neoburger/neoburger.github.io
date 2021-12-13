@@ -145,11 +145,11 @@ $$
 \mathbf{H}(\Lambda) = 
 \begin{bmatrix}
     0 & -1 & -1 & -1 & \dots & -1 \\
-    -1 & -\frac{2 k_{c_1} v_{c_1}}{ {v_{c_1} + n_{c_1}}^3 } & & & & \\
-    -1 & & -\frac{2 k_{c_2} v_{c_2}}{ {v_{c_2} + n_{c_2}}^3 } & & & \\
-    -1 & & & -\frac{2 k_{c_3} v_{c_3}}{ {v_{c_3} + n_{c_3}}^3 } & & \\
+    -1 & -\frac{2 k_{c_1} v_{c_1}}{ {(v_{c_1} + n_{c_1})}^3 } & & & & \\
+    -1 & & -\frac{2 k_{c_2} v_{c_2}}{ {(v_{c_2} + n_{c_2})}^3 } & & & \\
+    -1 & & & -\frac{2 k_{c_3} v_{c_3}}{ {(v_{c_3} + n_{c_3})}^3 } & & \\
     \vdots & & & & \ddots & \\
-    -1 & & & & & -\frac{2 k_{c_{\lVert \mathcal{C} \rVert}} v_{c_{\lVert \mathcal{C} \rVert}}}{ {v_{c_{\lVert \mathcal{C} \rVert}} + n_{c_{\lVert \mathcal{C} \rVert}}}^3 } \\
+    -1 & & & & & -\frac{2 k_{c_{\lVert \mathcal{C} \rVert}} v_{c_{\lVert \mathcal{C} \rVert}}}{ {(v_{c_{\lVert \mathcal{C} \rVert}} + n_{c_{\lVert \mathcal{C} \rVert}})}^3 } \\
 \end{bmatrix}
 $$
 
@@ -159,18 +159,24 @@ $$
 \mathbf{h}_i =
 \begin{bmatrix}
     0 & -1 & -1 & -1 & \dots & -1 \\
-    -1 & -\frac{2 k_{c_1} v_{c_1}}{ {v_{c_1} + n_{c_1}}^3 } & & & & \\
-    -1 & & -\frac{2 k_{c_2} v_{c_2}}{ {v_{c_2} + n_{c_2}}^3 } & & & \\
-    -1 & & & -\frac{2 k_{c_3} v_{c_3}}{ {v_{c_3} + n_{c_3}}^3 } & & \\
+    -1 & -\frac{2 k_{c_1} v_{c_1}}{ {(v_{c_1} + n_{c_1})}^3 } & & & & \\
+    -1 & & -\frac{2 k_{c_2} v_{c_2}}{ {(v_{c_2} + n_{c_2})}^3 } & & & \\
+    -1 & & & -\frac{2 k_{c_3} v_{c_3}}{ {(v_{c_3} + n_{c_3})}^3 } & & \\
     \vdots & & & & \ddots & \\
-    -1 & & & & & -\frac{2 k_{c_i} v_{c_i}}{ {v_{c_i} + n_{c_i}}^3 } \\
+    -1 & & & & & -\frac{2 k_{c_i} v_{c_i}}{ {(v_{c_i} + n_{c_i})}^3 } \\
 \end{bmatrix}
 $$
 
 Follow the [Leibniz formula for determinants](https://en.wikipedia.org/wiki/Leibniz_formula_for_determinants):
 
 $$
-\det \mathbf{h}_i = \sum_{t \in S_{i+1}}{(-1) {(-1)}^2 \prod_{1 \le s \le i, s \neq t}{-\frac{2 k_{c_s} v_{c_s}}{ {v_{c_s} + n_{c_s}}^3 }}}
+\det \mathbf{h}_i = \sum_{1 \le t \le i}{(-1) {(-1)}^2 \prod_{1 \le s \le i, s \neq t}{-\frac{2 k_{c_s} v_{c_s}}{ {(v_{c_s} + n_{c_s})}^3 }}}
+$$
+
+Thus:
+
+$$
+\operatorname{sign}(\det \mathbf{h}_i) = \operatorname{sign}(\sum_{1 \le t \le i}{ {(-1)}^i }) = {(-1)}^i
 $$
 
 ## The Experiment
