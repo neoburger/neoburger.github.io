@@ -26,7 +26,11 @@ $$
 
 ## The Solution
 
-Define the solution as a function $\Psi$: $\mathcal{C} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0}$
+Define the solution as a function $\Psi$:
+
+$$
+\mathcal{C} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}_{\gt 0} \rightarrow \mathcal{C} \rightarrow \mathbb{R}_{\ge 0}
+$$
 
 1. calculate $n_*$:
  
@@ -52,7 +56,7 @@ Define the solution as a function $\Psi$: $\mathcal{C} \times \mathbb{R}^{\lVert
     \mathcal{C}_+ = \{ c \vert c \in \mathcal{C}, n_c \ge 0 \}
     $$
 
-5. return a mapping $\psi$ where $V_+$ is $v_c$ for $\forall c \in \mathcal{C}_+$ and $K_+$ is $k_c$ for $\forall c \in \mathcal{C}_+$:
+5. return a mapping $\psi$ where $V_+$ is $v_c$ for $\forall c \in \mathcal{C}_+$:
 
    $$
    \psi(c) = \begin{cases} 0 & c \notin \mathcal{C}_+ \\ n_c & \mathcal{C}_+ = \mathcal{C} \\ \Psi(\mathcal{C}_+, V_+, K_+, n) & \text{else} \end{cases}
