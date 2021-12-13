@@ -30,11 +30,7 @@ Solve the amount of *NEO* $n_c \in \mathbb{R}_{\ge 0}$ we vote to each candidate
 
 ## The Solution
 
-Define the solution as a function $\Psi$:
-
-$$
-\{ \mathcal{C}_0 \vert \mathcal{C}_0 \subseteq \mathcal{C} \} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}_{\gt 0} \rightarrow \mathcal{C} \rightarrow \mathbb{R}_{\ge 0}
-$$
+Define the solution as a mapping $\Psi_{\mathcal{C}}$: $\mathcal{C} \rightarrow \mathbb{R}_{\ge 0}$
 
 1. calculate $n_*$:
  
@@ -60,16 +56,11 @@ $$
     \mathcal{C}_+ = \{ c \vert c \in \mathcal{C}, n_c \ge 0 \}
     $$
 
-5. return a mapping $\psi$:
+5. return a mapping $\Psi_{\mathcal{C}}$:
 
    $$
-   \psi(c) = \begin{cases} 0 & c \notin \mathcal{C}_+ \\ n_c & \mathcal{C}_+ = \mathcal{C} \\ \Psi(\mathcal{C}_+, V_+, K_+, n) & \text{else} \end{cases}
+   \Psi_{\mathcal{C}}(c) = \begin{cases} 0 & c \notin \mathcal{C}_+ \\ n_c & \mathcal{C}_+ = \mathcal{C} \\ \Psi_{\mathcal{C}}(c) & \text{else} \end{cases}
    $$
-   
-   where
-   
-   - $V_+$ is $v_c$ for $\forall c \in \mathcal{C}_+$
-   - $K_+$ is $k_c$ for $\forall c \in \mathcal{C}_+$
 
 ## The Analysis
 
