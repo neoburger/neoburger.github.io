@@ -16,7 +16,7 @@ Given:
 Solve the amount of *NEO* $n_c \in \mathbb{R_{\ge 0}}$ we vote to each candidate $c \in \mathcal{C}$ satisfing $\sum_{c \in \mathcal{C}}{n_c} = n$ and maximizing the following *GAS* reward expression:
 
 $$
-g = \sum_{c \in \mathcal{C}}{\frac{n_c k_c}{v_c + n_c}} \in \mathbb{R_{\ge 0}}
+f = \sum_{c \in \mathcal{C}}{\frac{n_c k_c}{v_c + n_c}} \in \mathbb{R_{\ge 0}}
 $$
 
 ## The Metric
@@ -45,6 +45,8 @@ $$
     $$
 
 ## The Analysis
+
+### Correctness
 
 TODO
 
