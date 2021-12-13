@@ -1,4 +1,4 @@
-# NeoBurger Public Strategies
+# NeoBurger Public Strategy
 
 ## The Introduction
 
@@ -13,7 +13,7 @@ Given:
 - $k_c \in \mathbb{R}_{\gt 0}$: the reward coefficient of each candidate $c \in \mathcal{C}$
 - $n \in \mathbb{R}_{\gt 0}$: the total amount of *NEO* we hold
 
-Solve the amount of *NEO* $n_c \in \mathbb{R}_{\gt 0}$ we vote to each candidate $c \in \mathcal{C}$ satisfing $\sum_{c \in \mathcal{C}}{n_c} = n$ and maximizing the following *GAS* reward expression:
+Solve the amount of *NEO* $n_c \in \mathbb{R}_{\ge 0}$ we vote to each candidate $c \in \mathcal{C}$ satisfing $\sum_{c \in \mathcal{C}}{n_c} = n$ and maximizing the following *GAS* reward expression:
 
 $$
 f = \sum_{c \in \mathcal{C}}{\frac{n_c k_c}{v_c + n_c}} \in \mathbb{R}_{\gt 0}
@@ -25,6 +25,8 @@ $$
 - space complexity
 
 ## The Solution
+
+Define the solution as a function $\Psi$:$ $\mathcal{C} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}_{\gt 0} \rightarrow \mathcal{C} \rightarrow \mathbb{R}_{\ge 0}$
 
 1. calculate $n_*$:
  
@@ -43,6 +45,18 @@ $$
     $$
     n_c = u \sqrt{k_c v_c} - v_c
     $$
+
+4. define $\mathcal{C}_-$:
+ 
+    $$
+    \mathcal{C}_- = \{ c \vert c \in \mathcal{C}, n_c \lt 0 \}
+    $$
+
+5. return a mapping $\psi$ where $V$ is $v_c$ for $\forall c \in \mathcal{C}$ and $K$ is $k_c$ for $\forall c \in \mathcal{C}$ :
+
+   $$
+   \psi(c) = \begin{cases} 0 & c \in \mathcal{C}_- \\ n_c & \lVert \mathcal{C}_0 \rVert = 0 \\ \Psi_{\mathcal{C} \setminus \mathcal{C}_-, V, K, n } & \text{else} \end{cases}
+   $$
 
 ## The Analysis
 
