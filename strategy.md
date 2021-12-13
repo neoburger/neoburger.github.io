@@ -200,7 +200,7 @@ $$
 Otherwise $f$ is never maximum because:
 
 $$
-f \vert_{\exists c \in \mathcal{C}_- : n_c \gt 0} \lt f \vert_{\forall c \in \mathcal{C}_- : n_c = 0}
+\max{f} \vert_{\exists c \in \mathcal{C}_- : n_c \gt 0} \lt \max{f} \vert_{\forall c \in \mathcal{C}_- : n_c = 0}
 $$
 
 Then re-calculate the rest.
