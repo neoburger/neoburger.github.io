@@ -26,7 +26,7 @@ $$
 
 ## The Solution
 
-Define the solution as a function $\Psi$: $\mathcal{C} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}^{\lVert \mathcal{C} \rVert}_{\gt 0} \times \mathbb{R}_{\gt 0} \rightarrow \mathcal{C} \rightarrow \mathbb{R}_{\ge 0}$
+Define the solution as a function $\Psi$: $\mathcal{C} \times \mathbb{R}_{\gt 0} \rightarrow \mathcal{C} \rightarrow \mathbb{R}_{\ge 0}$
 
 1. calculate $n_*$:
  
