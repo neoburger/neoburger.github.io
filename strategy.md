@@ -13,11 +13,15 @@ Given:
 - $k_c \in \mathbb{R}_{\gt 0}$: the reward coefficient of each candidate $c \in \mathcal{C}$
 - $n \in \mathbb{R}_{\gt 0}$: the total amount of *NEO* we hold
 
-Solve the amount of *NEO* $n_c \in \mathbb{R}_{\ge 0}$ we vote to each candidate $c \in \mathcal{C}$ satisfing $\sum_{c \in \mathcal{C}}{n_c} = n$ and maximizing the following *GAS* reward expression:
+Solve the amount of *NEO* $n_c \in \mathbb{R}_{\ge 0}$ we vote to each candidate $c \in \mathcal{C}$:
 
-$$
-f = \sum_{c \in \mathcal{C}}{\frac{n_c k_c}{v_c + n_c}} \in \mathbb{R}_{\gt 0}
-$$
+- satisfing $\sum_{c \in \mathcal{C}}{n_c} = n$
+
+- maximizing the following *GAS* reward expression:
+
+    $$
+    f = \sum_{c \in \mathcal{C}}{\frac{n_c k_c}{v_c + n_c}} \in \mathbb{R}_{\gt 0}
+    $$
 
 ## The Metric
 
