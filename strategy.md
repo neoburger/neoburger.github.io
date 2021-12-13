@@ -26,7 +26,7 @@ $$
 
 ## The Solution
 
-Define the solution as a function $\Psi$: $1$
+Define the solution as a function $\Psi$: $\mathcal{C} \times$
 
 1. calculate $n_*$:
  
