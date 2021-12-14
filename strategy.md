@@ -1,8 +1,45 @@
 # NeoBurger Public Strategy
 
+> Neo was founded 2014 and has grown into a first-class smart contract platform. It is backed by a global developer community who continue to drive the blockchain forward. [more](https://neo.org/about)
+
+> The N3 version of the Neo MainNet launched at 9:00:00 on August 2nd, 2021 (UTC). [more](https://neo.org/blog/details/4240)
+
+> Neo is unique in that it was the first public blockchain platform to adopt a dual token mechanism (*NEO* and *GAS*). It separates the rights of governance from the rights of using the network. It also provides a means of acquiring the tokens needing to pay transaction fees. [more](https://neo.org/neogas#tokens)
+
+> *NEO* token holders decide who is in charge of maintaining the Neo network through the election of a Neo Council. *GAS* token rewards are distributed to voters and council members alike. [more](https://neo.org/gov)
+
 ## The Introduction
 
-TODO
+> NeoBurger project seeks to compensate for the usability issues of indivisible NEO in applications such as DeFi, while also providing an avenue for maximized GAS rewards for holders. [more](https://neonewstoday.com/general/neoburger-an-automated-voting-dapp-and-neo-token-wrapper-launches-on-n3/)
+
+> NeoBurger earns the majority of its *GAS* by voting in the Neo N3 governance mechanism. *NEO* pooled in the NeoBurger contract is automatically managed using different voting strategies. NEO is distributed between a limited number of “agents,” each of which can cast a vote. By using multiple agents as separate wallets, NeoBurger can get around the limitation of only being able to vote for one candidate at a time.
+
+> Constant management of votes between the agents allows the NeoBurger platform to maximize the *GAS* received from the vote reward distribution. The majority of these rewards are passed on to *bNEO* holders, although some fees do also apply to certain actions. As more NEO is pooled in NeoBurger, the platform can employ further strategies, for example to use its increased vote weight to help elect new nodes to the council.
+
+In this article, the NeoBurger strategy of a simplified governance mechnism of Neo network is introduced.
+
+### Native Governance Reward Mechnism
+
+Everyone can burn `1000` *GAS* and become a candidate.
+
+Every *NEO* holder can vote to a candidate and the voting weight is its *NEO* balance. Votes can be changed or canceled by the *NEO* holder.
+
+The Top 7 voted candidates are elected as consensus nodes and the Top 21 voted candidates are elected as council members.
+
+There are 5 *GAS* generated in each block: `40%` of the *GAS* are splited equally among the 7 voter groups of consensus nodes and `40%` of the *GAS* are splited equally among the 14 voter groups of non-consensus-nodes council members. Inside each group, the *GAS* is distributed to the voters by their NEO balances.
+
+In this article, reward coefficient is defined as the *GAS* distributed to each voter group.
+
+NeoBurger can distribute its *NEO* to the controled agents who vote to different specific candidates.
+
+We want to solve the optimal *NEO* distribution.
+
+### Limitations of the Strategy
+
+In this article:
+
+- amount of *NEO* is a positive real number instead of positive integers while *NEO* is a indivisible token.
+- reward coefficients are constants while actually they can be changed by moving candidate's rank up or down.
 
 ## The Problem
 
@@ -198,11 +235,15 @@ Then re-calculate the rest.
 
 ### Time Complexity
 
-TODO
+$$
+O({\lVert \mathcal{C} \rVert}^2) 
+$$
 
 ### Space Complexity
 
-TODO
+$$
+O(\lVert \mathcal{C} \rVert) 
+$$
 
 ## The Experiment
 
