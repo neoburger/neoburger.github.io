@@ -1,5 +1,3 @@
-**WITHDRAW FEE WILL BE CHANGED TO `0.001` *GAS* PER *NEO* AT 2021-12-13 09:00:00 UTC+0**
-
 # Home
 
 *bNEO* is a standard [NEP-17](https://docs.neo.org/docs/en-us/develop/write/nep17.html) token with decimals `8` and it can be minted from *NEO* and redeemed to *NEO* 1:1. *bNEO* holders receive optimized *GAS* reward in [NEO GOVERNANCE](https://neo.org/gov).
@@ -16,7 +14,7 @@ The smart contract of NeoBurger is well designed to support all kinds of wallets
 | operation | description |
 | --- | --- |
 | **mint** *bNEO* | send *NEO* to `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos` and you will receive the same amount of *bNEO* instantly in the same transaction |
-| **redeem** *bNEO* | send withdraw fee (*GAS*) to `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos` and you will redeem *bNEO* to *NEO* instantly in the same transaction (the withdraw fee is `0.01` *GAS* per *NEO*) (it is better to send integer multiples of `0.01` *GAS* because *NEO* is indivisible) (the argument `data` of `transfer` invocation must be `null` which is default for most wallets) |
+| **redeem** *bNEO* | send withdraw fee (*GAS*) to `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos` and you will redeem *bNEO* to *NEO* instantly in the same transaction (the withdraw fee is `0.001` *GAS* per *NEO*) (it is better to send integer multiples of `0.001` *GAS* because *NEO* is indivisible) (the argument `data` of `transfer` invocation must be `null` which is default for most wallets) |
 | **claim** *GAS* | send any amount of *bNEO* to `NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos` and you will claim your *GAS* reward (it's better to send `0` *bNEO* if your wallet supports sending `0` amount) |
 
 *bNEO* is awailable on both mainnnet and testnet with the same script hash and contract address:
@@ -48,6 +46,8 @@ Neoburger is 7x24 maintained by automated systems and optimized strategies. Neob
 
 The permission of strategist is restricted by the candidate whitelist in order to protect the dbft assumptions since it's our responsibility to keep the network safu.
 
+For more about NeoBurger strategies, see [here](/strategy).
+
 ## Fee
 
 ### Performance Fee
@@ -58,9 +58,7 @@ The permission of strategist is restricted by the candidate whitelist in order t
 
 ### Withdraw Fee
 
-`0.01` *GAS* per *NEO* (`99%` will be distributed to *bNEO* holders and `1%` to the treasury)
-
-**WITHDRAW FEE WILL BE CHANGED TO `0.001` *GAS* PER *NEO* AT 2021-12-13 09:00:00 UTC+0**
+`0.001` *GAS* per *NEO* (`99%` will be distributed to *bNEO* holders and `1%` to the treasury)
 
 > Withdraw fee is necessary to ensure the profit safety of exsiting *bNEO* holders.
 >
