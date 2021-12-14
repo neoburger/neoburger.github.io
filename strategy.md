@@ -247,10 +247,6 @@ $$
 O(\lVert \mathcal{C} \rVert) 
 $$
 
-## The Experiment
-
-TODO
-
 ## The Conclusion
 
 damn greedy :)
