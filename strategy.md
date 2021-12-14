@@ -38,7 +38,7 @@ We want to solve the optimal *NEO* distribution.
 
 In this article:
 
-- amount of *NEO* is a positive real number instead of positive integers while *NEO* is a indivisible token.
+- amount of *NEO* is a positive real number instead of a positive integer while *NEO* is a indivisible token.
 - reward coefficients are constants while actually they can be changed by moving candidate's rank up or down.
 
 ## The Problem
@@ -100,6 +100,8 @@ Define the solution as a mapping $\Psi_{\mathcal{C}}$: $\mathcal{C} \rightarrow 
    $$
 
 ## The Analysis
+
+Proof of Correctness and complexity will be explained in this section.
 
 ### Correctness
 
@@ -251,7 +253,7 @@ TODO
 
 ## The Conclusion
 
-TODO
+damn greedy
 
 ---
 
