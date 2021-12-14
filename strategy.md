@@ -38,8 +38,8 @@ We want to solve the optimal *NEO* distribution.
 
 In this article:
 
-- amount of *NEO* is a positive real number instead of a positive integer while *NEO* is a indivisible token.
-- reward coefficients are constants while actually they can be changed by moving candidate's rank up or down.
+- amount of *NEO* is a positive real number instead of a positive integer while *NEO* is an indivisible token;
+- reward coefficients are constants while actually they can be changed by moving candidate's rank up or down; (actually moving candidates into or out from consensus nodes or council members is a dangerous operation for the entire network if the candidates are not prepared well)
 
 ## The Problem
 
@@ -253,7 +253,7 @@ TODO
 
 ## The Conclusion
 
-damn greedy
+damn greedy :)
 
 ---
 
