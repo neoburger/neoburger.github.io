@@ -16,21 +16,21 @@
 
 > Constant management of votes between the agents allows the NeoBurger platform to maximize the *GAS* received from the vote reward distribution. The majority of these rewards are passed on to *bNEO* holders, although some fees do also apply to certain actions. As more NEO is pooled in NeoBurger, the platform can employ further strategies, for example to use its increased vote weight to help elect new nodes to the council.
 
-In this article, the NeoBurger strategy of a simplified governance mechnism of Neo network is introduced.
+In this article, the NeoBurger strategy of a simplified governance mechanism of Neo network is introduced.
 
-### Native Governance Reward Mechnism
+### Native Governance Reward Mechanism
 
 Everyone can burn `1000` *GAS* and become a candidate.
 
-Every *NEO* holder can vote to a candidate and the voting weight is its *NEO* balance. Votes can be changed or canceled by the *NEO* holder.
+Every *NEO* holder can vote for a candidate and the voting weight is its *NEO* balance. Votes can be changed or canceled by the *NEO* holder.
 
 The Top 7 voted candidates are elected as consensus nodes and the Top 21 voted candidates are elected as council members.
 
-There are 5 *GAS* generated in each block: `40%` of the *GAS* are splited equally among the 7 voter groups of consensus nodes and `40%` of the *GAS* are splited equally among the 14 voter groups of non-consensus-nodes council members. Inside each group, the *GAS* is distributed to the voters by their NEO balances.
+There are 5 *GAS* generated in each block: `40%` of the *GAS* are split equally among the 7 voter groups of consensus nodes and `40%` of the *GAS* are split equally among the 14 voter groups of non-consensus-nodes council members. Inside each group, the *GAS* is distributed to the voters by their NEO balances.
 
-In this article, reward coefficient is defined as the *GAS* distributed to each voter group.
+In this article, the reward coefficient is defined as the *GAS* distributed to each voter group.
 
-NeoBurger can distribute its *NEO* to the controled agents who vote to different specific candidates.
+NeoBurger can distribute its *NEO* to the controlled agents who vote for different specific candidates.
 
 We want to solve the optimal *NEO* distribution.
 
