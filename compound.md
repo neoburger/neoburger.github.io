@@ -62,7 +62,9 @@ Solve:
 
 ## The Metric
 
-Assume $i \in \mathbb{N}_{+}$ and ${t_f}_{i} = f({p_f}_{i}, r, c)$, the principal sum after $i$-th compounding period is:
+Assume $i \in \mathbb{N}_{+}$
+and ${t_f}_{i} = f({p_f}_{i}, r, c)$,
+the principal sum after $i$-th compounding period is:
 
 $$
 {p_f}_{i} = {p_f}_{i-1} + {p_f}_{i-1} r {t_f}_{i-1} - c
@@ -104,6 +106,8 @@ where:
 - $W_\lambda$ is the function value of [Lambert W function](https://en.wikipedia.org/wiki/Lambert_W_function) at $\lambda$
 
 ## The Analysis
+
+The correctness is not been proved. But let's see how it is calculated.
 
 TODO
 
@@ -171,7 +175,7 @@ savefig('result.png')
 
 ## The Conclusion
 
-TODO
+a reasonable good result
 
 ---
 
