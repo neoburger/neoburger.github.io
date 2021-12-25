@@ -58,17 +58,50 @@ Given:
 
 Solve:
 
-- $t$: compounding period
+- $t \in \mathtt{R}_{+}$: compounding period
 
 ## The Metric
 
-TODO
+Assume $i \in \mathbb{N}_{+}$ and ${t_f}_{i} = f({p_f}_{i}, r, c)$, the principal sum after $i$-th compounding period is:
+
+$$
+{p_f}_{i} = {p_f}_{i-1} + {p_f}_{i-1} r {t_f}_{i-1} - c
+$$
+
+The initial principal sum is:
+
+$$
+{p_f}_{0} = p
+$$
+
+The total time after $i$-th compounding period is:
+
+$$
+{T_f}_{i} = {T_f}_{i-1} + {t_f}_{i}
+$$
+
+and
+
+$$
+{T_f}_{0} = 0
+$$
+
+Then we define $f_1 > f_2$ if and only if:
+
+$$
+\exists i, j \in \mathbb{N}_{+}: {p_{f_1}}_{i} > {p_{f_2}}_{j} \land {T_{f_1}}_{i} < {T_{f_2}}_{j}
+$$
 
 ## The Solution
 
 $$
-t = \frac{e^{W(-\frac{1 - \frac{c}{x}}{e}) + 1} + \frac{c}{x} - 1}{p}
+t = \frac{e^{W_\lambda + 1} + e \lambda}{p}
 $$
+
+where:
+
+- $\lambda$ is $\frac{c - p}{e p}$
+- $W_\lambda$ is the function value of [Lambert W function](https://en.wikipedia.org/wiki/Lambert_W_function) at $\lambda$
 
 ## The Analysis
 
